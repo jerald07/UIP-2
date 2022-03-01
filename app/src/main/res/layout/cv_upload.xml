@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg4"
+    tools:context=".cv_upload"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="Sign up"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_pi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        app:cardBackgroundColor="?attr/colorControlHighlight"
+        app:cardCornerRadius="16sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:orientation="vertical"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp">
+
+            <Spinner
+                android:id="@+id/simpleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10sp"
+                android:background="@android:drawable/editbox_background"
+                android:contentDescription="@string/company"
+                android:minHeight="48dp"
+                android:textAlignment="gravity" />
+
+            <EditText
+                android:id="@+id/cv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginEnd="10sp"
+                android:background="@android:drawable/editbox_background"
+                android:drawableStart="@drawable/ic_drive_file_24"
+                android:drawableEnd="@drawable/ic_cloud_upload_24"
+                android:drawablePadding="10sp"
+                android:fontFamily="sans-serif"
+                android:hint="Upload CV/Resume Here"
+                android:inputType="none"
+                android:minHeight="48dp"
+                android:paddingLeft="10sp"
+                android:paddingEnd="10sp"
+                android:textSize="16sp" />
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginEnd="20sp"
+                android:text="Submit"
+                app:cornerRadius="16sp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
