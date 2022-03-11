@@ -21,13 +21,8 @@
 
         <activity
             android:name=".welcome"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".visvis_info"
             android:exported="false"/>
@@ -46,6 +41,20 @@
         <activity
             android:name=".cv_upload_university"
             android:exported="false"/>
+        <activity
+            android:name=".splashscreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".forgot_password"
+            android:exported="false"/>
+
     </application>
 
 </manifest>

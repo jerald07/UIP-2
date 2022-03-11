@@ -118,10 +118,10 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/lp_btn_fp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forgot Password?"
         android:layout_below="@id/layout_login"
         android:gravity="center"
-        android:id="@+id/btn_fp"/>
+        android:text="Forgot Password?" />
 </RelativeLayout>

@@ -15,5 +15,9 @@ class loginplatform : AppCompatActivity() {
             startActivity(intent)
 
         }
+        lp_btn_fp.setOnClickListener(){
+            intent = Intent(this, forgot_password::class.java)
+            startActivity(intent)
         }
+    }
 }
