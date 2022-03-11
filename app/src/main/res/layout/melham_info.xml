@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F51565C8"
+    tools:context=".melham_info">
+
+    <Button
+        android:id="@+id/btn_melham_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10sp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableEnd="@drawable/ic_next"
+        android:text="next"
+        android:textColor="@color/white"
+        app:cornerRadius="16sp" />
+
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:src="@drawable/melham" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/bg_melham"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="melham.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/text_melham"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bg_melham"
+        android:layout_marginTop="-100sp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Melham Construction Corporation"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scroll_02"
+        style="@android:style/Widget.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_below="@id/text_melham"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp">
+
+        <TextView
+            android:id="@+id/txt_melham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text= "MELHAM CONSTRUCTION CORPORATION (MCC), first registered on February 2020 in the Philippine government situated at no.27 commonwealth avenue Diliman north Fairview Quezon City. The main goal is to cater the growing demand of industrialization of the country. Following the trends and demand of latest innovation in construction engineering, the company is committed in providing services following its core values. Melham Construction Corporation (MCC) cater broader scope dealing with vertical project such (Structural, Fit out works), Horizontal Project such (Roads, Highways and bridges), Telecommunication such (Cell site erection) and Technology such (Installation of fiber optics, SLI and ODN)."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/visitus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll_02"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="@string/visit_us"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="10sp"
+        android:layout_below="@id/visitus"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:backgroundTint="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/btn_facebook"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20sp"
+            android:clickable="false"
+            android:contentDescription="TODO"
+            android:padding="5sp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/btn_website"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20sp"
+            android:backgroundTint="#FBFBFB"
+            android:clickable="false"
+            android:contentDescription="TODO"
+            android:padding="5sp"
+            android:src="@drawable/website" />
+    </LinearLayout>
+
+
+</RelativeLayout>

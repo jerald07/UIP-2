@@ -10,8 +10,8 @@ class loginplatform : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.loginplatform)
 
-        btn_apply_now.setOnClickListener {
-            intent = Intent(this, registerplatform::class.java)
+        lp_btn_login.setOnClickListener {
+            intent = Intent(this, login_dashboard::class.java)
             startActivity(intent)
 
         }

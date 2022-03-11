@@ -10,16 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UIP">
         <activity
+            android:name=".melham_info"
+            android:exported="false" />
+        <activity
             android:name=".login_dashboard"
             android:exported="false" />
         <activity
-            android:name=".cv_upload"
-            android:exported="false" />
-        <activity
-            android:name=".registerplatform"
-            android:exported="false" />
-        <activity
             android:name=".loginplatform"
+            android:exported="false"/>
+
+        <activity
+            android:name=".welcome"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +28,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".visvis_info"
+            android:exported="false"/>
+        <activity
+            android:name=".anafara_info"
+            android:exported="false"/>
+        <activity
+            android:name=".individual_applicant_platform"
+            android:exported="false"/>
+        <activity
+            android:name=".university_applicant_platform"
+            android:exported="false"/>
+        <activity
+            android:name=".cv_upload_individual"
+            android:exported="false"/>
+        <activity
+            android:name=".cv_upload_university"
+            android:exported="false"/>
     </application>
 
 </manifest>

@@ -9,6 +9,7 @@
     <string name="company">COMPANY</string>
     <string name="example_gmail_com">example@gmail.com</string>
     <string name="next">Next</string>
+    <string name="visit_us">Visit Us</string>
 
     <string-array name="Company">
         <item>Select Company</item>
