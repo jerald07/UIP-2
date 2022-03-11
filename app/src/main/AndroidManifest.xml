@@ -17,30 +17,31 @@
             android:exported="false" />
         <activity
             android:name=".loginplatform"
-            android:exported="false"/>
-
+            android:exported="false" />
+        <activity
+            android:name=".forgot_password"
+            android:exported="false" />
         <activity
             android:name=".welcome"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".visvis_info"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".anafara_info"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".individual_applicant_platform"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".university_applicant_platform"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".cv_upload_individual"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".cv_upload_university"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".splashscreen"
             android:exported="true">
@@ -50,10 +51,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity
-            android:name=".forgot_password"
-            android:exported="false"/>
 
     </application>
 
